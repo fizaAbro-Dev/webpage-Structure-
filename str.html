@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header, .footer {
+            background: rgb(204, 160, 160);
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .nav {
+            background: rgb(156, 95, 95);
+            text-align: center;
+            padding: 15px;
+            font-size: 25px;
+            color: black;
+        }
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+            padding: 10px;
+        }
+        .sidebar {
+            width: 20%;
+            background: lightcoral;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .main-content {
+            flex: 1;
+            background: rgb(206, 208, 211);
+            padding: 25px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+        .footer {
+            background: rgb(224, 181, 181);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="nav">Navigation Menu</div>
+        <div class="content-wrapper">
+            <div class="sidebar">Content</div>
+            <div class="main-content">Main Content</div>
+            <div class="sidebar">Content</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>
